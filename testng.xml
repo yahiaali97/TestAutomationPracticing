@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite">
+    <test name="RegressionTest2">
+        <groups>
+            <run>
+                <include name="Go"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="TestPackage.TestClass"/>
+        </classes>
+    </test>
+
     <test name="RegressionTest">
         <groups>
             <run>
-                <include name="Group2"/>
+                <include name="Group1"/>
             </run>
         </groups>
         <classes>
