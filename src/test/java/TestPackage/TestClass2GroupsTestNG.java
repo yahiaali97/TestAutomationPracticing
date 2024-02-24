@@ -2,7 +2,7 @@ package TestPackage;
 
 import org.testng.annotations.Test;
 
-public class TestClass2 {
+public class TestClass2GroupsTestNG {
 
     @Test(groups = {"Group1"})
     public void testMethod1() {

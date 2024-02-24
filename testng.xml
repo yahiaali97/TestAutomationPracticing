@@ -20,7 +20,7 @@
             </run>
         </groups>
         <classes>
-            <class name="TestPackage.TestClass2"/>
+            <class name="TestPackage.TestClass2GroupsTestNG"/>
         </classes>
     </test>
 </suite>
