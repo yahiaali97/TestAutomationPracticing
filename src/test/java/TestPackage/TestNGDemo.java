@@ -8,6 +8,5 @@ public class TestNGDemo {
     public void testMethod() {
 
         System.out.println("Hello");
-
     }
 }
