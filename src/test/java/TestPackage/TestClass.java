@@ -15,10 +15,12 @@ import java.time.Duration;
 
 public class TestClass {
     WebDriver driver;
+    //By loginBtn = By.id("aa");
 
     @BeforeTest
     public void IndicateOFStart() {
         System.out.println("Started");
+       // driver.findElement(loginBtn).click();
     }
 
     @Test(priority = 2)
