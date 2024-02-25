@@ -3,7 +3,7 @@
 <suite name="TestSuite">
     <test name="RegressionTest2">
         <classes>
-            <class name="TestPackage.TestClassAssertions"/>
+            <class name="TestPackage.TestNGParameters"/>
         </classes>
     </test>
 </suite>

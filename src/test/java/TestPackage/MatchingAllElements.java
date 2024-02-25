@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class FindAllMatchingElements {
+public class MatchingAllElements {
     WebDriver driver;
     @Test
-    public void FindAllMatchingElements() {
+    public void AllMatchedElements() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://automationexercise.com/test_cases");

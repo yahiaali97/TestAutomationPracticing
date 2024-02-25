@@ -16,23 +16,20 @@ public class TestNGParameters {
         // driver.findElement(loginBtn).click();
     }
     @Test(priority = 2)
-    public void testYouTubeSearch() {
+    public void testToGoogle() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.google.com");
+    }
+
+    @Test(priority = 1, enabled = true, groups = {"Go"},dependsOnMethods = {"testToGoogle"})
+    public void testToFilgoal() {
+        driver.navigate().to("https://www.filgoal.com");
         driver.quit();
     }
 
-    @Test(priority = 1, enabled = true, groups = {"Go"})
-    public void ToGoogle() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.filgoal.com");
-        driver.quit();
-    }
-
-    @AfterTest(dependsOnMethods = {"ToGoogle"}, groups = {"Go"})
-    public void TestDependency() {
+    @AfterTest
+    public void endSession() {
         driver.quit();
     }
 
