@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class AllMatchingElements {
+public class FindAllMatchingElements {
     WebDriver driver;
     @Test
     public void FindAllMatchingElements() {
