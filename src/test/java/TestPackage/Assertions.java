@@ -11,7 +11,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class TestClassAssertions {
+public class Assertions {
     private WebDriver driver;
 
     public void tearDown() {
