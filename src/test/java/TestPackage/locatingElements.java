@@ -46,7 +46,7 @@ public class locatingElements {
             linkNumber++;
         }
         try {
-            Assert.assertEquals(45, LinkSize);
+            Assert.assertEquals(46, LinkSize);
         }
         catch (Exception e) {
             Assert.fail("Test failed: " + e.getMessage());

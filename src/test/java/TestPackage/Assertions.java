@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class Assertions {
     private WebDriver driver;
@@ -29,6 +30,8 @@ public class Assertions {
             String title = driver.getTitle();
             System.out.println("The Title is: " + title);
             assertEquals(title, "Automation Practice Website for UI Testing - Test Cases", "Title mismatch");
+            assertTrue(title.contains("Testing"), "Title should contain 'Testing'");
+            System.out.println(title.contains("Testing"));
             List<WebElement> Header = driver.findElements(By.tagName("li"));
             assertEquals(290,Header.size());
         } catch (Exception e) {
