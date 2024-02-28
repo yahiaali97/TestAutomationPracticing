@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 public class DropdownList {
     WebDriver driver;
+
     @BeforeTest
     public void StartSession() {
         driver = new ChromeDriver();
@@ -21,9 +22,11 @@ public class DropdownList {
 
     @Test
     public void Dropdown() {
-        Select dropdown = new Select(driver.findElement(By.id("dropdown")));
-        dropdown.selectByIndex(2);
-        Assert.assertEquals();
+        WebElement selectElement = driver.findElement(By.id("dropdown"));
+        Select Options = new Select(selectElement);
+        Options.getOptions().size();
+        Options.selectByIndex(2);
+        Assert.assertFalse(Options.isMultiple());
     }
 
     @AfterTest
