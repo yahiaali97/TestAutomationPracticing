@@ -27,6 +27,8 @@ public class DropdownList {
         Options.getOptions().size();
         Options.selectByIndex(2);
         Assert.assertFalse(Options.isMultiple());
+        Options.selectByVisibleText("Option 1");
+        Assert.assertEquals("Option 1", Options.getFirstSelectedOption().getText());
     }
 
     @AfterTest
