@@ -25,6 +25,6 @@ public class Actions {
         //System.out.println(SearchField.getTagName());
         org.openqa.selenium.interactions.Actions actions = new org.openqa.selenium.interactions.Actions(driver);
         actions.click(SearchField).sendKeys("apple icam").sendKeys(Keys.ENTER).perform();
-        driver.close();
+        driver.quit();
     }
 }
