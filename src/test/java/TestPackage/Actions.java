@@ -26,7 +26,5 @@ public class Actions {
         org.openqa.selenium.interactions.Actions actions = new org.openqa.selenium.interactions.Actions(driver);
         actions.click(SearchField).sendKeys("apple icam").sendKeys(Keys.ENTER).perform();
         driver.quit();
-
-        test
     }
 }
