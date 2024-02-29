@@ -48,6 +48,5 @@ public class CheckBoxes {
     public void tearDown() {
 
         driver.quit();
-        driver.close();
     }
 }
