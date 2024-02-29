@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Assertions {
-    private WebDriver driver;
+    public WebDriver driver;
 
     public void tearDown() {
         if (driver != null) {
