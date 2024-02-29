@@ -35,6 +35,6 @@ public class Actions {
 
     @AfterTest
     public void endSession() {
-        driver.quit();
+        driver.close();
     }
 }
