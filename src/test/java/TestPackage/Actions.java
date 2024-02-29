@@ -36,5 +36,6 @@ public class Actions {
     @AfterTest
     public void endSession() {
         driver.close();
+        //close from laptop
     }
 }
