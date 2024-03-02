@@ -11,18 +11,19 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class FindElementByXpath {
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver;
 
     @BeforeTest
     public void BeforeStart() {
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/login");
-        driver.manage().window().fullscreen();
+
     }
 
     @Test
     public void XpathSelector() {
-
+        driver.get("https://the-internet.herokuapp.com/login");
+        driver.manage().window().fullscreen();
         WebElement Button = driver.findElement(By.xpath("//button[@class='radius']"));
         System.out.println(Button.getText());
         Button.click();

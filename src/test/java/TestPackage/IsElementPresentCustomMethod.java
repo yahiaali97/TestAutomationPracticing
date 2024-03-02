@@ -18,11 +18,11 @@ public class IsElementPresentCustomMethod {
     public void StartSession() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/checkboxes");
     }
 
     @Test
     public void testElementPresent() throws InterruptedException {
+        driver.get("https://the-internet.herokuapp.com/checkboxes");
         if (isElementPresent(By.xpath("//*[@id=\"checkboxes\"]/input[1]"))) {
             WebElement CheckBox1 = driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[1]"));
             Thread.sleep(1000);

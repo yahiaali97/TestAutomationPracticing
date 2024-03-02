@@ -16,15 +16,15 @@ public class TakingScreenshots {
     WebDriver driver;
 
     @BeforeTest
-    public void startSession() throws InterruptedException {
+    public void startSession() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.google.com");
-        Thread.sleep(3000);
     }
 
     @Test
-    public void takeScr() throws IOException {
+    public void takeScr() throws IOException, InterruptedException {
+        driver.get("https://www.google.com");
+        Thread.sleep(3000);
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String destinationPath = "SeleniumScreens\\screenshot.png";
         FileUtils.copyFile(screenshotFile, new File(destinationPath));

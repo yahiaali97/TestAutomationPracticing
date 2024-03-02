@@ -19,11 +19,11 @@ public class CheckBoxes {
     public void StartSession() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/checkboxes");
     }
 
     @Test
     public void Start() throws InterruptedException {
+        driver.get("https://the-internet.herokuapp.com/checkboxes");
         WebElement CheckBox1 = driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[1]"));
         Thread.sleep(2000);
         CheckBox1.click();

@@ -17,11 +17,11 @@ public class DropdownList {
     public void StartSession() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/dropdown");
     }
 
     @Test
     public void Dropdown() {
+        driver.get("https://the-internet.herokuapp.com/dropdown");
         WebElement selectElement = driver.findElement(By.id("dropdown"));
         Select Options = new Select(selectElement);
         Options.getOptions().size();

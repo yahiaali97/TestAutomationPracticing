@@ -18,11 +18,11 @@ public class WebTables {
     public void StartSession() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/tables");
     }
 
     @Test
     public void testWebTable() {
+        driver.get("https://the-internet.herokuapp.com/tables");
         WebElement WebTable = driver.findElement(By.id("table1"));
         List<WebElement> rows = driver.findElements(By.tagName("tr"));
         Assert.assertEquals(10,rows.size());

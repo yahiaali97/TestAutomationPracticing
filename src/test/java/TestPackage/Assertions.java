@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -13,7 +14,13 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Assertions {
-    public WebDriver driver;
+
+    WebDriver driver;
+    @BeforeTest
+    public void StartSession() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
 
     public void tearDown() {
         if (driver != null) {
@@ -24,8 +31,6 @@ public class Assertions {
     @Test
     public void ToautomationexerciseSite() {
         try {
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
             driver.get("https://automationexercise.com/test_cases");
             String title = driver.getTitle();
             System.out.println("The Title is: " + title);
