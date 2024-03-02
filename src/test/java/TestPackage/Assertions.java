@@ -11,11 +11,11 @@ import java.util.List;
 
 public class Assertions extends beforeAndAfterBase {
 
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
     @Test
     public void ToautomationexerciseSite() {
@@ -33,8 +33,8 @@ public class Assertions extends beforeAndAfterBase {
             Assert.fail("Test failed: " + e.getMessage());
 
         }
-//        finally {
-//            tearDown(); // Ensure WebDriver is closed even if an exception occurs
-//        }
+        finally {
+            tearDown(); // Ensure WebDriver is closed even if an exception occurs
+        }
     }
 }

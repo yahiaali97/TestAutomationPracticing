@@ -13,7 +13,7 @@ public class beforeAndAfterBase {
         driver.manage().window().maximize();
     }
 
-    @AfterTest(enabled = false)
+    @AfterTest(enabled = true)
     public void afterBase() throws InterruptedException {
         Thread.sleep(1000);
         driver.quit();

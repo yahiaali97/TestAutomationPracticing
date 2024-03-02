@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class AlertDemo extends beforeAndAfterBase {
 
-    @Test(enabled = false)
+    @Test
     public void HandleAlert() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/javascript_alerts");
         WebElement alertBtn = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
@@ -20,9 +20,9 @@ public class AlertDemo extends beforeAndAfterBase {
         alert.accept();
     }
 
-    @Test(enabled = false)
+    @Test
     public void HandlePromptAlert() throws InterruptedException {
-        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        driver.navigate().to("https://the-internet.herokuapp.com/javascript_alerts");
         WebElement alertBtn = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
         alertBtn.click();
         Alert alert = driver.switchTo().alert();
@@ -33,7 +33,7 @@ public class AlertDemo extends beforeAndAfterBase {
 
     @Test
     public void HandleConfirmAlert() throws InterruptedException {
-        driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+        driver.navigate().to("https://the-internet.herokuapp.com/javascript_alerts");
         WebElement alertBtn = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
         alertBtn.click();
         Alert alert = driver.switchTo().alert();

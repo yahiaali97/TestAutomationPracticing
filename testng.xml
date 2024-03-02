@@ -3,7 +3,8 @@
 <suite name="TestSuite">
     <test name="RegressionTest2">
         <classes>
-            <class name="TestPackage.HandleMultipleWindows"/>
+            <class name="TestPackage.Assertions"/>
         </classes>
     </test>
+
 </suite>
