@@ -3,11 +3,10 @@ package TestPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import java.util.List;
 
-public class LocatingElements extends beforeMethod{
+public class LocatingElements extends beforeAndAfterBase {
     @Test
     public void ListOfElements() {
         driver.get("https://the-internet.herokuapp.com/tables");
@@ -40,10 +39,5 @@ public class LocatingElements extends beforeMethod{
         catch (Exception e) {
             Assert.fail("Test failed: " + e.getMessage());
         }
-    }
-    @AfterTest
-    public void endSession(){
-        driver.close();
-        driver.quit();
     }
 }

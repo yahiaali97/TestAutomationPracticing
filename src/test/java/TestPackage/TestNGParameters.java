@@ -2,7 +2,6 @@ package TestPackage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -28,10 +27,4 @@ public class TestNGParameters {
         driver.navigate().to("https://www.filgoal.com");
         driver.quit();
     }
-
-    @AfterTest
-    public void endSession() {
-        driver.quit();
-    }
-
 }

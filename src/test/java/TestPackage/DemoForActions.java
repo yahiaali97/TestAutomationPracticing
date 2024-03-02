@@ -4,12 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class DemoForActions extends beforeMethod {
+public class DemoForActions extends beforeAndAfterBase {
     @Test
     public void Start() {
 
@@ -25,11 +24,5 @@ public class DemoForActions extends beforeMethod {
                 sendKeys("Build your own computer").
                 sendKeys(Keys.ENTER).
                 perform();
-    }
-
-    @AfterTest
-    public void endSession() throws InterruptedException {
-        Thread.sleep(1000);
-        driver.quit();
     }
 }

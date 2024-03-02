@@ -3,10 +3,9 @@ package TestPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class CheckBoxes extends beforeMethod {
+public class CheckBoxes extends beforeAndAfterBase {
     @Test
     public void Start() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
@@ -28,11 +27,5 @@ public class CheckBoxes extends beforeMethod {
         } catch (AssertionError e) {
             System.out.println("Checkbox 1 not checked: " + e.getMessage());
         }
-    }
-
-    @AfterTest
-    public void tearDown() {
-
-        driver.quit();
     }
 }

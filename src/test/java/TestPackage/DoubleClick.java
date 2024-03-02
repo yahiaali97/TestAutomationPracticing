@@ -3,12 +3,11 @@ package TestPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class DoubleClick extends beforeMethod {
+public class DoubleClick extends beforeAndAfterBase {
     @Test(enabled = true)
     public void DoubleClickTest() throws InterruptedException {
         driver.get("https://cookbook.seleniumacademy.com/DoubleClickDemo.html");
@@ -17,10 +16,5 @@ public class DoubleClick extends beforeMethod {
         Actions builder = new Actions(driver);
         builder.doubleClick(message).perform();
         Thread.sleep(3000);
-    }
-
-    @BeforeTest
-    public void endSession() {
-        driver.quit();
     }
 }

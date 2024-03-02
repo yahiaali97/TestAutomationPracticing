@@ -3,12 +3,11 @@ package TestPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import java.util.NoSuchElementException;
 
-public class IsElementPresentCustomMethod extends beforeMethod{
+public class IsElementPresentCustomMethod extends beforeAndAfterBase {
     @Test
     public void testElementPresent() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
@@ -32,10 +31,5 @@ public class IsElementPresentCustomMethod extends beforeMethod{
         } catch (NoSuchElementException e) {
             return false;
         }
-    }
-
-    @AfterTest
-    public void tearDownSession() {
-        driver.quit();
     }
 }

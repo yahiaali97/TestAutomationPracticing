@@ -3,7 +3,7 @@
 <suite name="TestSuite">
     <test name="RegressionTest2">
         <classes>
-            <class name="TestPackage.FindElementByXpath"/>
+            <class name="TestPackage.HandleMultipleWindows"/>
         </classes>
     </test>
 </suite>

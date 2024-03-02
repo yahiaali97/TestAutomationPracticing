@@ -4,18 +4,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.List;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class Assertions extends beforeMethod {
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+import java.util.List;
+
+public class Assertions extends beforeAndAfterBase {
+
+//    public void tearDown() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 
     @Test
     public void ToautomationexerciseSite() {
@@ -32,8 +32,9 @@ public class Assertions extends beforeMethod {
             // Handle exceptions, print details, and rethrow if necessary
             Assert.fail("Test failed: " + e.getMessage());
 
-        } finally {
-            tearDown(); // Ensure WebDriver is closed even if an exception occurs
         }
+//        finally {
+//            tearDown(); // Ensure WebDriver is closed even if an exception occurs
+//        }
     }
 }

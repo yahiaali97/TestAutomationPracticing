@@ -3,13 +3,11 @@ package TestPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class WebTables extends beforeMethod {
-
+public class WebTables extends beforeAndAfterBase {
     @Test
     public void testWebTable() {
         driver.get("https://the-internet.herokuapp.com/tables");
@@ -23,11 +21,5 @@ public class WebTables extends beforeMethod {
                 System.out.println(col.getText());
             }
         }
-    }
-
-    @AfterTest
-    public void tearDown() {
-
-        driver.quit();
     }
 }

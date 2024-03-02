@@ -4,10 +4,9 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class AlertDemo extends beforeMethod {
+public class AlertDemo extends beforeAndAfterBase {
 
     @Test(enabled = false)
     public void HandleAlert() throws InterruptedException {
@@ -40,11 +39,5 @@ public class AlertDemo extends beforeMethod {
         Alert alert = driver.switchTo().alert();
         Thread.sleep(500);
         alert.dismiss();
-    }
-
-    @AfterTest(enabled = true)
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(1000);
-        driver.quit();
     }
 }

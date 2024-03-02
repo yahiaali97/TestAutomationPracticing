@@ -3,10 +3,9 @@ package TestPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class DragAndDrop extends beforeMethod {
+public class DragAndDrop extends beforeAndAfterBase {
     @Test
     public void DragDrop() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/drag_and_drop");
@@ -23,11 +22,5 @@ public class DragAndDrop extends beforeMethod {
         new Actions(driver).
                 dragAndDrop(source, target).
                 perform();
-    }
-
-    @AfterTest
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(500);
-        driver.quit();
     }
 }

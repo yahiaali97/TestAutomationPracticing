@@ -2,7 +2,7 @@ package TestPackage;
 
 import org.testng.annotations.Test;
 
-public class TestNGGroups {
+public class TestNGGroups extends beforeAndAfterBase{
     @Test(groups = {"Group1"})
     public void testMethod1() {
         System.out.println("This testMethod1");
