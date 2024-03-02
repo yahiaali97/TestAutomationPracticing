@@ -1,23 +1,14 @@
 package TestPackage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class DoubleClick {
-    WebDriver driver;
-    @BeforeTest
-    public void StartSession() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
+public class DoubleClick extends beforeMethod {
     @Test(enabled = true)
     public void DoubleClickTest() throws InterruptedException {
         driver.get("https://cookbook.seleniumacademy.com/DoubleClickDemo.html");

@@ -9,14 +9,15 @@ import org.testng.annotations.Test;
 
 public class TestNGParameters {
     WebDriver driver;
-    //By loginBtn = By.id("aa");
     @BeforeTest
     public void IndicateOFStart() {
         System.out.println("Started");
-        // driver.findElement(loginBtn).click();
+
     }
     @Test(priority = 2)
     public void testToGoogle() {
+        //By loginBtn = By.id("aa");
+        // driver.findElement(loginBtn).click();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.google.com");

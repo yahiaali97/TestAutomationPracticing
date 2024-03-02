@@ -10,16 +10,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class FindElementByXpath {
-    WebDriver driver;
-
-    @BeforeTest
-    public void BeforeStart() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-
-    }
-
+public class FindElementByXpath extends beforeMethod{
     @Test
     public void XpathSelector() {
         driver.get("https://the-internet.herokuapp.com/login");

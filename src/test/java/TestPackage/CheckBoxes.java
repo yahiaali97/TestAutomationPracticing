@@ -1,26 +1,12 @@
 package TestPackage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-
-public class CheckBoxes {
-    WebDriver driver;
-
-    @BeforeTest
-    public void StartSession() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
+public class CheckBoxes extends beforeMethod {
     @Test
     public void Start() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");

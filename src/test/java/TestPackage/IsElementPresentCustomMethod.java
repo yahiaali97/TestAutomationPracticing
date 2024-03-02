@@ -1,25 +1,14 @@
 package TestPackage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.NoSuchElementException;
 
-public class IsElementPresentCustomMethod {
-    WebDriver driver;
-
-    @BeforeTest
-    public void StartSession() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
-
+public class IsElementPresentCustomMethod extends beforeMethod{
     @Test
     public void testElementPresent() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
