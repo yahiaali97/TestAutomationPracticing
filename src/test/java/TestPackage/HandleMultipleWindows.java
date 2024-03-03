@@ -40,7 +40,7 @@ public class HandleMultipleWindows extends beforeAndAfterBase {
         assertEquals("Help", driver.getTitle());
         System.out.println(driver.getTitle());
         Thread.sleep(1000);
-        
+
         // code inside Help windows
         driver.close();
         driver.switchTo().window(currentWindowID);

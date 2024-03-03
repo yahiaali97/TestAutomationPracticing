@@ -25,7 +25,7 @@ public class GoToYoutube {
 
         new Actions(driver).
                 click(Search).
-                sendKeys("President Abdelfattah").
+                sendKeys("Mo Salah").
                 sendKeys(Keys.ENTER).
                 perform();
     }
