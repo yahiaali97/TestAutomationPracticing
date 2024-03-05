@@ -1,13 +1,14 @@
 package TestPackage;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class FluentWait extends beforeAndAfterBase{
+public class FluentWaitDemo extends beforeAndAfterBase {
     @Test
     public void testFluentWait() {
         driver.get("https://www.selenium.dev/selenium/web/dynamic.html");
@@ -17,8 +18,7 @@ public class FluentWait extends beforeAndAfterBase{
         Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(2))
                 .pollingEvery(Duration.ofMillis(300))
-                .ignoring(NoSuchElementException.class);
-
+                .ignoring(ElementNotInteractableException.class);
 
         wait.until(
                 d -> {
