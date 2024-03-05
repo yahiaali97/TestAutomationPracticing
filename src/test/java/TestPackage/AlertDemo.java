@@ -3,8 +3,9 @@ package TestPackage;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 public class AlertDemo extends beforeAndAfterBase {
 
@@ -15,7 +16,7 @@ public class AlertDemo extends beforeAndAfterBase {
         alertBtn.click();
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
-        Assert.assertEquals("I am a JS Alert", alertText);
+        assertEquals("I am a JS Alert", alertText);
         Thread.sleep(2000);
         alert.accept();
     }

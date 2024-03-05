@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class DropdownList extends beforeAndAfterBase {
     @Test
     public void Dropdown() {
@@ -16,6 +18,6 @@ public class DropdownList extends beforeAndAfterBase {
         Options.selectByIndex(2);
         Assert.assertFalse(Options.isMultiple());
         Options.selectByVisibleText("Option 1");
-        Assert.assertEquals("Option 1", Options.getFirstSelectedOption().getText());
+        assertEquals("Option 1", Options.getFirstSelectedOption().getText());
     }
 }

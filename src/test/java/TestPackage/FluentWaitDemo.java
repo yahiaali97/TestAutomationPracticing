@@ -6,11 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static org.testng.Assert.assertEquals;
 
 
 public class FluentWaitDemo extends beforeAndAfterBase {
@@ -31,6 +31,6 @@ public class FluentWaitDemo extends beforeAndAfterBase {
                     return true;
                 });
 
-        Assert.assertEquals("Displayed", revealed.getDomProperty("value"));
+        assertEquals("Displayed", revealed.getDomProperty("value"));
     }
 }

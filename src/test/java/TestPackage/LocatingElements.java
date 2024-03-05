@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
+import static org.testng.Assert.assertEquals;
+
 public class LocatingElements extends beforeAndAfterBase {
     @Test
     public void ListOfElements() {
@@ -35,7 +37,7 @@ public class LocatingElements extends beforeAndAfterBase {
             linkNumber++;
         }
         try {
-            Assert.assertEquals(46, LinkSize);
+            assertEquals(46, LinkSize);
         }
         catch (Exception e) {
             Assert.fail("Test failed: " + e.getMessage());

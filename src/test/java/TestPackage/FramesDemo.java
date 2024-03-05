@@ -1,10 +1,10 @@
 package TestPackage;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 public class FramesDemo extends beforeAndAfterBase {
     @Test
@@ -12,7 +12,7 @@ public class FramesDemo extends beforeAndAfterBase {
         driver.get("https://cookbook.seleniumacademy.com/Frames.html");
         driver.switchTo().frame("left");
         WebElement msg = driver.findElement(By.tagName("p"));
-        Assert.assertEquals("This is Left Frame", msg.getText());
+        assertEquals("This is Left Frame", msg.getText());
         System.out.println(msg.getText());
     }
 
@@ -26,7 +26,7 @@ public class FramesDemo extends beforeAndAfterBase {
         driver.switchTo().defaultContent();
         driver.switchTo().frame("right");
         WebElement msg2 = driver.findElement(By.tagName("p"));
-        Assert.assertEquals("This is Right Frame", msg2.getText());
+        assertEquals("This is Right Frame", msg2.getText());
         System.out.println(msg2.getText());
     }
 
@@ -35,7 +35,7 @@ public class FramesDemo extends beforeAndAfterBase {
         driver.switchTo().defaultContent();
         driver.switchTo().frame(1);
         WebElement msg3 = driver.findElement(By.tagName("p"));
-        Assert.assertEquals("This Frame doesn't have id or name", msg3.getText());
+        assertEquals("This Frame doesn't have id or name", msg3.getText());
         System.out.println(msg3.getText());
     }
 }
