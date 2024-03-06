@@ -14,8 +14,8 @@ public class beforeAndAfterBase {
     }
 
     @AfterTest(enabled = true)
-    public void afterBase() throws InterruptedException {
-        Thread.sleep(1000);
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(500);
         driver.quit();
     }
 }
