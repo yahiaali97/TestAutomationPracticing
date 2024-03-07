@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.NoSuchElementException;
 
-public class IsElementPresentCustomMethod extends beforeAndAfterBase {
+public class IsElementPresentCustomMethodDemo extends beforeAndAfterBase {
     @Test
     public void testElementPresent() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");

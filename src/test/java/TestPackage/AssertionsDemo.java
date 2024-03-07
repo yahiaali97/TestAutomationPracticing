@@ -10,7 +10,7 @@ import java.util.List;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class Assertions extends beforeAndAfterBase {
+public class AssertionsDemo extends beforeAndAfterBase {
 
     public void tearDown() {
         if (driver != null) {

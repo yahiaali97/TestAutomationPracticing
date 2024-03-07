@@ -12,7 +12,7 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertTrue;
 
-public class TakingScreenshots extends beforeAndAfterBase {
+public class ScreenshotsDemo extends beforeAndAfterBase {
     @Test
     public void testCase() {
 
@@ -46,5 +46,6 @@ public class TakingScreenshots extends beforeAndAfterBase {
                 System.err.println("Error while taking screenshot: " + e.getMessage());
             }
         }
+        driver.quit();
     }
 }

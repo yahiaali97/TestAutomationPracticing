@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class JSExecuteInSelenium extends beforeAndAfterBase {
+public class JSExecutionInSeleniumDemo extends beforeAndAfterBase {
     @Test
     public void executeJSCode() {
         driver.get("https://www.google.com");
