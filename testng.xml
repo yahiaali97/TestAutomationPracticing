@@ -111,7 +111,7 @@
                     <include name="testScrollDown"/>
                 </methods>
             </class>
-            <class name="TestPackage.TestNGParameters">
+            <class name="TestPackage.TestNGParametersDemo">
                 <methods>
                     <include name="testToGoogle"/>
                 </methods>

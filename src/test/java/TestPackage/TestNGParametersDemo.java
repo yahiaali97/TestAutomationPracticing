@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
-public class TestNGParameters {
+public class TestNGParametersDemo {
     WebDriver driver;
     @BeforeTest
     public void IndicateOFStart() {
