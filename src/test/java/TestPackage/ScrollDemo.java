@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class ScrollDemo extends beforeAndAfterBase{
+public class ScrollDemo extends BeforeAndAfterBase {
     @Test
     public void testScrollDown() throws InterruptedException {
         driver.get("https://demo.nopcommerce.com");

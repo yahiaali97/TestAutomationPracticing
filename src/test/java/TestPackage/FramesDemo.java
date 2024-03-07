@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class FramesDemo extends beforeAndAfterBase {
+public class FramesDemo extends BeforeAndAfterBase {
     @Test
     public void testFramesByIDOrName() {
         driver.get("https://cookbook.seleniumacademy.com/Frames.html");

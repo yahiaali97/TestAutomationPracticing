@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class AlertDemo extends beforeAndAfterBase {
+public class AlertDemo extends BeforeAndAfterBase {
 
     @Test
     public void HandleAlert() throws InterruptedException {

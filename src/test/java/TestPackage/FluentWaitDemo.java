@@ -13,7 +13,7 @@ import java.time.Duration;
 import static org.testng.Assert.assertEquals;
 
 
-public class FluentWaitDemo extends beforeAndAfterBase {
+public class FluentWaitDemo extends BeforeAndAfterBase {
     @Test
     public void testFluentWait() {
         driver.get("https://www.selenium.dev/selenium/web/dynamic.html");

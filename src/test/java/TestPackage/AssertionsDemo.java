@@ -10,14 +10,13 @@ import java.util.List;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class AssertionsDemo extends beforeAndAfterBase {
+public class AssertionsDemo extends BeforeAndAfterBase {
 
     public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
     }
-
     @Test
     public void ToautomationexerciseSite() {
         try {
@@ -32,7 +31,6 @@ public class AssertionsDemo extends beforeAndAfterBase {
         } catch (Exception e) {
             // Handle exceptions, print details, and rethrow if necessary
             Assert.fail("Test failed: " + e.getMessage());
-
         }
         finally {
             tearDown(); // Ensure WebDriver is closed even if an exception occurs
