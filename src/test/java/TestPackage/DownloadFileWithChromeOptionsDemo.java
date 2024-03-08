@@ -14,7 +14,7 @@ import java.util.HashMap;
 public class DownloadFileWithChromeOptionsDemo {
     WebDriver driver;
     public static String userDir = System.getProperty("user.dir");
-    public static String relativePath = "\\src\\test\\resources\\downloadedFiles";
+    public static String relativePath = "\\DownloadedFiles";
     public static String downloadPath = userDir + relativePath;
 
     public static ChromeOptions getChromeOptions() {
