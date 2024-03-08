@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class DropdownListDemo extends BeforeAndAfterBase {
+public class DropdownListDemo extends TestBase {
     @Test
     public void Dropdown() {
         driver.get("https://the-internet.herokuapp.com/dropdown");

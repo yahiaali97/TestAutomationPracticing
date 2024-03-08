@@ -10,7 +10,7 @@ import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
 
-public class HandleCookiesDemo extends BeforeAndAfterBase {
+public class HandleCookiesDemo extends TestBase {
     @Test
     public void testCookies() {
         driver.get("http://magento-demo.lexiconn.com/");

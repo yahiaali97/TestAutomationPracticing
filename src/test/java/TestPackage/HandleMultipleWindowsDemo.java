@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
 
-public class HandleMultipleWindowsDemo extends BeforeAndAfterBase {
+public class HandleMultipleWindowsDemo extends TestBase {
 
     @Test(enabled = false)
     public void testWindowUsingTitle() {

@@ -11,7 +11,7 @@ import java.time.Duration;
 
 import static org.testng.Assert.assertEquals;
 
-public class ExplicitWaitDemo extends BeforeAndAfterBase {
+public class ExplicitWaitDemo extends TestBase {
     @Test
     public void testExplicitWait() {
         driver.get("https://www.filgoal.com/?top=true");

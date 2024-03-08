@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class WebTablesDemo extends BeforeAndAfterBase {
+public class WebTablesDemo extends TestBase {
     @Test
     public void testWebTable() {
         driver.get("https://the-internet.herokuapp.com/tables");

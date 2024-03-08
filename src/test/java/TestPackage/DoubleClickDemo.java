@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class DoubleClickDemo extends BeforeAndAfterBase {
+public class DoubleClickDemo extends TestBase {
     @Test(enabled = true)
     public void DoubleClickTest() throws InterruptedException {
         driver.get("https://cookbook.seleniumacademy.com/DoubleClickDemo.html");

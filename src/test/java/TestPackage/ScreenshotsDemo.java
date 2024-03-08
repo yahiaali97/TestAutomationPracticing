@@ -12,7 +12,7 @@ import java.io.IOException;
 
 import static org.testng.Assert.assertTrue;
 
-public class ScreenshotsDemo extends BeforeAndAfterBase {
+public class ScreenshotsDemo extends TestBase {
     @Test
     public void testCase() {
 

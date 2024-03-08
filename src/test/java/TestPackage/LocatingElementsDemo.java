@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class LocatingElementsDemo extends BeforeAndAfterBase {
+public class LocatingElementsDemo extends TestBase {
     @Test
     public void ListOfElements() {
         driver.get("https://the-internet.herokuapp.com/tables");

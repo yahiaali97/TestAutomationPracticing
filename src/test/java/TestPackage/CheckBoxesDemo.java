@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckBoxesDemo extends BeforeAndAfterBase {
+public class CheckBoxesDemo extends TestBase {
     @Test
     public void Start() throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/checkboxes");

@@ -12,7 +12,7 @@ import java.time.Duration;
 
 import static org.testng.Assert.assertEquals;
 
-public class ContextMenuDemo extends BeforeAndAfterBase {
+public class ContextMenuDemo extends TestBase {
     @Test
     public void testContextMenu() throws InterruptedException {
         driver.get("https://swisnl.github.io/jQuery-contextMenu/demo/accesskeys.html");

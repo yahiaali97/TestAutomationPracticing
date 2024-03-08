@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class ActionsDemo extends BeforeAndAfterBase {
+public class ActionsDemo extends TestBase {
     @Test
     public void Start() {
 

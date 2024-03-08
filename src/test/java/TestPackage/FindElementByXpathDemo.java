@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class FindElementByXpathDemo extends BeforeAndAfterBase {
+public class FindElementByXpathDemo extends TestBase {
 
     @Test
     public void XpathSelector() {

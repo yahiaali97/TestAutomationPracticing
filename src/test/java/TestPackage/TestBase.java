@@ -5,10 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-public class BeforeAndAfterBase {
+public class TestBase {
     WebDriver driver;
     @BeforeTest
-    public void beforeBase() {
+    public void BeforeBase() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
